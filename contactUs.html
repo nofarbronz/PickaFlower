@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר - Pick A Flower</title>
+    <meta name="description" content="צור קשר" />
+    <meta name="keywords" content="צור קשר, שאלות, פניות, תלונות" />
+    <meta name="author" content="עדן, נופר, שובל ועינב" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/contactCSS.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/קישוט פרחים 3.png" alt="" />
+</head>
+<body>
+    <div id="container">
+    <a href="index.html"><img id="smallLogo" alt="" src="shrunked images/homePage/לוגו-קטן_optimized.png" /></a>
+    <header>
+
+
+        <div id="skipCo">
+            <a href="#h1trivia">דלג לתוכן העמוד</a>
+        </div>
+        <nav class="nav1" aria-label="ניווט מרכזי">
+            <ul>
+                <li>
+                    <a href="" class="mainBlocks">מגדיר פרחים</a>
+                    <ul>
+                        <li>
+                            <a class="flowerGuideBlocks firstMenu" href="#">עונות</a>
+                            <ul class="seasons">
+                                <li><a class="notallowed" href="#">סתיו</a></li>
+                                <li><a class="notallowed" href="#">חורף</a></li>
+                                <li><a class="notallowed" href="#">אביב</a></li>
+                                <li><a class="notallowed" href="#">קיץ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="flowerGuideBlocks firstMenu" id="colorsBlock" href="#">צבעים</a>
+                            <ul id="colors">
+                                <li>
+                                    <a class="notallowed" href="#">אדום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-אדום_optimized.png" />
+                                </li>
+                                <li>
+                                    <a class="notallowed" href="#">צהוב</a>
+                                    <img class="spots" alt="" src="shrunked images/homePage/כתם-צהוב_optimized.png" />
+                                </li>
+                                <li>
+                                    <a class="notallowed" href="#">לבן</a><img class="spots" alt="" src="shrunked images/homePage/כתם-לבן_optimized.png" />
+                                </li>
+                                <li>
+                                    <a class="notallowed" href="#">ורוד</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ורוד_optimized.png" />
+                                </li>
+                                <li>
+                                    <a class="notallowed" href="#">ירוק</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ירוק_optimized.png" />
+                                </li>
+                                <li>
+                                    <a href="blueFlowers.html" target="_blank">כחול</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כחול_optimized.png" />
+                                </li>
+                                <li>
+                                    <a class="notallowed" href="#">כתום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כתום_optimized.png" />
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="flowerGuideBlocks firstMenu" href="#">אזורים בארץ</a>
+                            <ul class="regions">
+                                <li><a class="notallowed" href="#">גולן</a></li>
+                                <li><a class="notallowed" href="#">גליל</a></li>
+                                <li><a class="notallowed" href="#">חיפה והסביבה</a></li>
+                                <li><a class="notallowed" href="#">מרכז הארץ</a></li>
+                                <li><a class="notallowed" href="#">השרון</a></li>
+                                <li><a class="notallowed" href="#">חוף הים</a></li>
+                                <li><a class="notallowed" href="#">ירושלים והרי יהודה</a></li>
+                                <li><a class="notallowed" href="#">נגב</a></li>
+                                <li><a class="notallowed" href="#">ערבה</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="flowerGuideBlocks notallowed" href="#">מילון מושגים</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="mainBlocks">פעילויות</a>
+                    <ul id="activities">
+                        <li>
+                            <a href="#" class="firstMenu">אישיות</a>
+                            <ul class="individual">
+                                <li> <a class="notallowed" href="#">תשחצים</a> </li>
+                                <li> <a class="notallowed" href="#">תפזורות</a> </li>
+                                <li> <a class="notallowed" href="#">דפי צביעה</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="firstMenu">קבוצתיות</a>
+                            <ul class="team">
+                                <li> <a class="notallowed" href="#">בינגו</a> </li>
+                                <li><a href="trivia.html" target="_blank">טריוויה</a></li>
+                                <li> <a class="notallowed" href="#">חפש את הפרח</a> </li>
+                                <li> <a class="notallowed" href="#">הידעת?</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="firstMenu">חגים</a>
+                            <ul class="holidays">
+                                <li> <a class="notallowed" href="#">ט”ו בשבט</a> </li>
+                                <li> <a class="notallowed" href="#">פסח</a> </li>
+                                <li> <a class="notallowed" href="#">שבועות</a> </li>
+                                <li> <a class="notallowed" href="#">שירים</a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="eatFlowers.html">פרחים במטבח</a> </li>
+
+                    </ul>
+                </li>
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+        <br />
+        <nav id="breadCrums">
+            <ol>
+                <li>
+                    <a href="index.html">דף הבית</a>
+                </li>
+                <li>צבעים</li>
+                <li>כחול</li>
+            </ol>
+        </nav>
+        <h1 id="h1blueFlower" class="font1H">צור קשר </h1>
+        <br />
+    </header>
+
+    <section>
+        <p class="font">דעתכם חשובה לנו!</p>
+        <p class="font">
+            עבור כל שאלה ובקשה ניתן ליצור קשר בטופס ואנו נחזור אליכם בהקדם!
+        </p>
+    </section>
+    <hr />
+    <form action="" aria-labelledby="form_head">
+        <section>
+            <div role="group" aria-labelledby="form_head">
+                <div id="form_head" class="title">צרו קשר איתנו:</div>
+                <br />
+
+                <label for="firstName" class="font">שם פרטי <span> (שדה חובה)</span></label><br />
+                <input type="text" name="firstName" id="firstName" autocomplete="given-name" required aria-required="true"><br />
+
+                <br />
+                <label for="lastName" class="font">שם משפחה<span> (שדה חובה)</span></label><br />
+                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required aria-required="true"><br />
+
+            </div>
+            <br />
+            <div id="pic">
+            </div>
+            <fieldset>
+                <legend class="font">מין:</legend>
+                <br />
+                <div>
+                    <label for="genderMale" class="font">זכר  </label>
+                    <input type="radio" name="gender" id="genderMale" value="Male">
+
+                    <label for="genderFemale" class="font">נקבה </label>
+                    <input type="radio" name="gender" id="genderFemale" value="Female">
+
+                    <label for="genderOther" class="font">אחר </label>
+                    <input type="radio" name="gender" id="genderOthere" value="other">
+                </div>
+            </fieldset>
+            <br /><br />
+
+
+            <label for="emailAddress" class="font">דואר אלקטרוני <span> (שדה חובה)</span></label><br />
+            <input type="email" name="emailAddress" id="emailAddress" autocomplete="email" required aria-required="true"><br />
+
+        </section>
+
+
+        <section>
+            <br />
+            <h2><span> (שדה חובה)</span> רשמו כאן את פנייתכם:</h2>
+            <label for="cv"></label><br />
+            <textarea id="cv" name="cv" rows="4" cols="50"> </textarea>
+            <br>
+            <label for="submit"></label>
+            <input id="submit" class="font" type="submit" value="שלח">
+        </section>
+
+        <div id="feedback"></div>
+
+    </form>
+    </div>
+
+
+</body>
+</html>

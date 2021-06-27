@@ -1,0 +1,448 @@
+﻿body {
+    direction: rtl;
+    background-color: #fdf6f4;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+#smallLogo {
+    position: relative;
+    right: 1040px;
+    top: -50px;
+    width: 270px;
+    height: 110px;
+}
+
+.nav1 {
+    position: relative;
+    top: -200px;
+    z-index: 10;
+}
+
+
+#skipCo {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 30px;
+    opacity: 0;
+}
+
+    #skipCo > a {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    #skipCo a:focus, #skipCo a:active {
+        width: 160px;
+        height: 30px;
+        overflow: visible;
+        color: lemonchiffon;
+        background-color: #39593b;
+        text-decoration: none;
+        text-align: center;
+        font-family: gadi-almog-regular-aaa;
+        padding: 7px;
+        margin-right: 600px;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li a {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li a {
+    background-color: white;
+    color: #39593b;
+    width: 160px;
+    height: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 13pt;
+    align-self: center;
+    background: #f4c6b8;
+    padding: 1rem 0rem;
+    margin: 0 1rem;
+    outline: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #ff6c6d;
+}
+
+.mainBlocks {
+    background-image: url('../shrunked images/homePage/חץ-למטה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center left;
+}
+
+header nav ul li a { 
+    background-color: #fdf6f4;
+}
+
+    header nav ul li a:hover { 
+        background-color: #f4c6b8;
+    }
+
+header .nav1 ul li:hover a { 
+    background-color: #f4c6b8;
+}
+
+
+header nav ul li ul > li > a {
+    margin-top: 10px;
+}
+
+.firstMenu {
+    background-image: url('../shrunked images/homePage/חץ-הצידה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left;
+}
+
+header .nav1 ul li ul { 
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+}
+
+header .nav1 ul li:hover > ul { 
+    display: block;
+    width: 150px;
+    margin-top: 45px;
+}
+
+.flowerGuideBlocks:link {
+    background-color: #f4c6b8;
+}
+
+.flowerGuideBlocks:hover {
+    background-color: #f9c461;
+}
+
+header nav ul li ul { 
+    margin-top: 17px;
+}
+
+.seasons {
+    position: relative;
+    top: -55px;
+}
+
+header .nav1 ul li ul > li > ul > li { 
+    margin-top: -60px;
+}
+
+
+
+header .nav1 ul li ul > li > ul { 
+    display: none;
+    position: absolute;
+    margin-right: 175px;
+    padding-top: 73px;
+}
+
+header .nav1 ul li > ul > li:hover ul {
+    display: block;
+    width: 150px;
+}
+
+
+
+header .nav1 ul li ul li a:link { 
+    background-color: #f4c6b8;
+}
+
+header .nav1 ul li ul li a:hover { 
+    background-color: #f9c461;
+    border: 2px solid #ef8e29;
+}
+
+.spots {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    right: 130px;
+    bottom: 30px;
+}
+
+.regions {
+    position: relative;
+    top: 55px;
+}
+
+#activities {
+    margin-right: 195px;
+    margin-top: 45px;
+}
+
+.team {
+    margin-right: 175px;
+    margin-top: 45px;
+}
+
+.individual {
+    position: relative;
+    top: -55px;
+}
+
+.holidays {
+    position: relative;
+    top: 55px;
+}
+
+.notallowed {
+    cursor: not-allowed;
+}
+
+
+
+#breadCrums ol li {
+    display: inline-block;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 12pt;
+    text-align: right;
+    position: relative;
+    left: 500px;
+    top: -50px;
+}
+
+    #breadCrums ol li > a {
+        color: darkcyan;
+    }
+
+    #breadCrums ol li:after {
+        content: ">"
+    }
+
+    #breadCrums ol li:last-child:after {
+        content: ""
+    }
+
+@font-face {
+    font-family: 'gadi-almog-regular-aaa';
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.eot') format('embedded-opentype');
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.ttf') format('truetype');
+}
+
+header {
+    margin-top: 55px;
+}
+
+h1 {
+    font-family: gadi-almog-regular-aaa;
+    font-weight: bold;
+    color: #39593b;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    font-size: 40pt;
+}
+
+header p {
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 13pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+
+header div {
+    position: relative;
+    right: 200px;
+    display: inline-block;
+    color: #123b14;
+    width: 220px;
+    height: 10px;
+    text-align: center;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 16pt;
+    align-self: center;
+    padding: 2rem 0rem;
+    margin: 0px 2rem;
+    outline: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #ff6c6d;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#easy {
+    background: #69e16d;
+    border: 4px solid #206624;
+}
+
+    #easy:hover {
+        background: #42bd46;
+    }
+
+#medium {
+    background: #f1c166;
+    border: 4px solid #896919;
+}
+
+    #medium:hover {
+        background: #f1b33e;
+    }
+
+#hard {
+    background: #ff6c6d;
+    border: 4px solid #d41c1e;
+}
+
+    #hard:hover {
+        background: #f8494a;
+    }
+
+#headerDecoration {
+    width: 600px;
+    height: 470px;
+    position: relative;
+    right: 350px;
+    top: -40px;
+}
+
+h2 {
+    font-size: 19pt;
+    font-family: gadi-almog-regular-aaa;
+    font-weight: bold;
+    color: #39593b;
+    background-color: moccasin;
+    width: 150px;
+}
+
+    h2::before {
+        content: "רמה: "
+    }
+
+label {
+    font-family: 'gadi-almog-regular-aaa';
+    line-height: 230%;
+    border-radius: 255px 90px 225px 90px/90px 225px 90px 255px;
+    border: 3px solid #f8eb97;
+    background-color: lemonchiffon;
+    padding: 0rem 1rem;
+    margin: 20px;
+    position: relative;
+    top: 80px;
+    right: 30px;
+    outline: none;
+    display: inline-block;
+}
+
+input {
+    position: relative;
+    top: 80px;
+    right: 40px;
+    height: 70px;
+    width: 30px;
+}
+
+fieldset {
+    background-image: url('../shrunked images/homePage/רקע-טריוויה-עמוד-בית_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position-x: right;
+    height: 400px;
+}
+
+legend {
+    position: relative;
+    top: 50px;
+    right: 20px;
+    bottom: 15px;
+    font-size: 15pt;
+    color: lemonchiffon;
+    height: 15px;
+    font-family: 'gadi-almog-regular-aaa';
+    font-weight: bold;
+    line-height: 230%;
+}
+
+section div a {
+    font-family: 'gadi-almog-regular-aaa';
+    border-radius: 255px 90px 225px 90px/90px 225px 90px 255px;
+    border: 3px solid #206624;
+    background-color: #77dd7a;
+    position: relative;
+    right: 460px;
+    align-self: center;
+    padding: 1rem 4rem;
+    margin: 0px 2rem;
+    width: 220px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.V {
+    position: relative;
+    right: 360px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+a:link {
+    color: #39593b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #39593b;
+}
+
+footer {
+    background-image: url('../images/מסגרת פוטר2.png');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 300px;
+    margin-bottom: -150px;
+    margin-top: 100px;
+}
+
+    footer div {
+        display: inline-block;
+        width: 223px;
+        position: relative;
+        top: 100px;
+        right: 277px;
+        margin-left: 123px;
+        font-size: 15pt;
+        font-family: 'gadi-almog-regular-aaa';
+        color: #39593b;
+        font-weight: bold;
+    }
+
+#mediumSection {
+    padding-top: 80px;
+}
+
+#hardSection {
+    padding-top: 80px;
+}
+
+.triviaFlowes {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    right: 565px;
+    top: 66px;
+}
+
+.moveAnswers {
+    position: relative;
+    top: -165px;
+}

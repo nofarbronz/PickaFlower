@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>טריוויה- Pick a Flower</title>
+    <meta name="description" content="משחק טריוויה מגדיר פרחים" />
+    <meta name="keywords" content="פרחים, פעילויות, מגדיר פרחים, טריוויה, משחק, תחרות" />
+    <meta name="author" content="עינב, עדן, שובל ונופר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/trivia.css" rel="stylesheet" />
+    <!--<link href="styles/myStyle.css" rel="stylesheet" />-->
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/קישוט פרחים 3.png" alt="" />
+</head>
+<body>
+    <div id="container">
+        <header>
+
+
+            <a href="index.html"><img id="smallLogo" alt="" src="shrunked images/homePage/לוגו-קטן_optimized.png" /></a>
+            <div id="skipCo">
+                <a href="#h1trivia">דלג לתוכן העמוד</a>
+            </div>
+            <nav class="nav1" aria-label="ניווט מרכזי">
+                <ul>
+                    <li>
+                        <a href="" class="mainBlocks">מגדיר פרחים</a>
+                        <ul>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">עונות</a>
+                                <ul class="seasons">
+                                    <li><a class="notallowed" href="#">סתיו</a></li>
+                                    <li><a class="notallowed" href="#">חורף</a></li>
+                                    <li><a class="notallowed" href="#">אביב</a></li>
+                                    <li><a class="notallowed" href="#">קיץ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" id="colorsBlock" href="#">צבעים</a>
+                                <ul id="colors">
+                                    <li>
+                                        <a class="notallowed" href="#">אדום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-אדום_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">צהוב</a>
+                                        <img class="spots" alt="" src="shrunked images/homePage/כתם-צהוב_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">לבן</a><img class="spots" alt="" src="shrunked images/homePage/כתם-לבן_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ורוד</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ורוד_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ירוק</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ירוק_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a href="blueFlowers.html" target="_blank">כחול</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כחול_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">כתום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כתום_optimized.png" />
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">אזורים בארץ</a>
+                                <ul class="regions">
+                                    <li><a class="notallowed" href="#">גולן</a></li>
+                                    <li><a class="notallowed" href="#">גליל</a></li>
+                                    <li><a class="notallowed" href="#">חיפה והסביבה</a></li>
+                                    <li><a class="notallowed" href="#">מרכז הארץ</a></li>
+                                    <li><a class="notallowed" href="#">השרון</a></li>
+                                    <li><a class="notallowed" href="#">חוף הים</a></li>
+                                    <li><a class="notallowed" href="#">ירושלים והרי יהודה</a></li>
+                                    <li><a class="notallowed" href="#">נגב</a></li>
+                                    <li><a class="notallowed" href="#">ערבה</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="flowerGuideBlocks notallowed" href="#">מילון מושגים</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mainBlocks">פעילויות</a>
+                        <ul id="activities">
+                            <li>
+                                <a href="#" class="firstMenu">אישיות</a>
+                                <ul class="individual">
+                                    <li> <a class="notallowed" href="#">תשחצים</a> </li>
+                                    <li> <a class="notallowed" href="#">תפזורות</a> </li>
+                                    <li> <a class="notallowed" href="#">דפי צביעה</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">קבוצתיות</a>
+                                <ul class="team">
+                                    <li> <a class="notallowed" href="#">בינגו</a> </li>
+                                    <li><a href="trivia.html" target="_blank">טריוויה</a></li>
+                                    <li> <a class="notallowed" href="#">חפש את הפרח</a> </li>
+                                    <li> <a class="notallowed" href="#">הידעת?</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">חגים</a>
+                                <ul class="holidays">
+                                    <li> <a class="notallowed" href="#">ט”ו בשבט</a> </li>
+                                    <li> <a class="notallowed" href="#">פסח</a> </li>
+                                    <li> <a class="notallowed" href="#">שבועות</a> </li>
+                                    <li> <a class="notallowed" href="#">שירים</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="eatFlowers.html">פרחים במטבח</a> </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+            <nav id="breadCrums">
+                <ol>
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li>פעילויות</li>
+                    <li>קבוצתיות</li>
+                    <li>טריוויה</li>
+                </ol>
+            </nav>
+
+            <pre>
+
+
+
+            </pre>
+
+
+            <h1 id="h1trivia">טריוויה</h1>
+            <p>
+                בארץ ישראל יש פרחים במגוון צבעים, סוגים ומינים. <br />
+                כנסו לטריוויה לפי הרמות (קל, בינוני וקשה) וגלו מה אתם באמת יודעים עליהם.
+            </p>
+            <br />
+            <div id="easy"> <a href="#easySection"> קל</a></div>
+            <div id="medium"><a href="#mediumSection"> בינוני</a> </div>
+            <div id="hard"><a href="#hardSection"> קשה </a></div>
+
+            <img id="headerDecoration" alt="" src="images/קישור לעמוד טריוויה.png" />
+            <pre>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+        </header>
+        <main>
+            <article>
+                <section id="easySection">
+                    <hr />
+                    <h2> קל</h2>
+                    <fieldset>
+                        <img class="triviaFlowes" alt="רקפת" src="shrunked images/trivia/רקפת-חו_optimized.png" />
+                        <legend>1. כיצד נקרא הפרח המופיע בתמונה?</legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">רקפת  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">פרג </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">צבעוני  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">חרצית </label>
+                            <br /><br />
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <img class="triviaFlowes" alt="סביון" src="shrunked images/trivia/סביון-חו_optimized.png" />
+                        <legend>2. כיצד נקרא הפרח המופיע בתמונה?</legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">ורד  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">רקפת </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">צבעוני  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">סביון </label>
+                            <br /><br />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. איך נראית כלנית?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">עלים אדומים ובפנים שחור  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">עלים כחולים ובפנים אדום </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">עלים אדומים ובפנים ירוק  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">עלים ירוקים ובפנים צהוב </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. מה מהצמחים הבאים הוא צמח אכיל?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">רקפת  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">כלנית </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">חמציץ  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אין כזה צמח בכלל </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. מה מהפרחים הבאים הוא פרח ורוד?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">רקפת  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">כלנית </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">צבעוני  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">פרג </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>6. כיצד נבחין בין כלנית, נורית ופרג?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="easyQu6">זמן פריחתם- כלנית-> נורית -> פרג  </label>
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB" class="easyQu6">על פי צורת הפרח </label>
+                        <br />
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="easyQu6">שלושתם פורחים במקומות שונים בארץ  </label>
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD" class="easyQu6">על פי גובהם. </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>7. מתי כדאי לראות אירוסים פורחים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">בתחילת האביב  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">בשיא הקיץ </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">בסוף החורף  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">בסוף האביב </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>8. באיזה צבע הפרחים של כליל החורש?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">כתום  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">ורוד </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">תכלת  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אדום </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>9. האם קיים פרח בשם ירוקת החמור?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">כן  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">לא </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">כן אבל הוא נפוץ רק במצרים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">לא הוא נכחד </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>10. באיזה אופן צומחים ורדים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">על עץ  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הם פקעות, ולכן צומחים מהאדמה </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">על שיח  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">צמח מטפס </label>
+                        <br /><br />
+                    </fieldset>
+                    <div>
+                        <a href="trivia_answers.html" target="_blank">סיימתי! הצג את התשובות</a>
+
+                        <img class="V" alt="" src="images/trivia/וי.png" />
+                    </div>
+                </section>
+
+
+                <section id="mediumSection">
+                    <hr />
+                    <div>
+                        <h2> בינוני</h2>
+                        <fieldset>
+                            <legend>1. מאיזה פרח נוצרה המנורה בסמל מדינת ישראל?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">כלנית אדומה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">ורד ורוד </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מרוות ירושלים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">פרח הציפור </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>2. מהו הפרח הלאומי של ארצות הברית?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">ורד  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">שושנה </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">סחלב  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">ציפורן </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>3. מה תפקידו של גבעול הפרח?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">להוביל מים ומינרלים מהשורש לצמח  </label>
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">להוביל סוכרים מהעלים לצמח </label>
+                            <br />
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">לקשר בין השורש לצמח  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">כל התשובות נכונות </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>4.     פרח הנרקיס מוכר גם בשם _____.            </legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">נרקיס הביצה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">מלך הביצה </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מלך הנחלים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">אף אחת מהתשובות </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>5. מה משותף לחרדל השדה, חרצית עטורה וסביון אביבי?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">כולם פורחים בסתיו  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">כולם פורחים לפרחים צהובים  </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מהעלים שלהם מייצרים תבלינים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">הם היו נפוצים בישראל בעבר אך נכחד </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>6. מדוע נקבע החוק להגנת פרחי הבר בישראל?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">הם היו יפים יותר מהפרחים במשתלות  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB"> בכל העולם יש חוק כזה </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">היה צורך להרחיק אותם מהחיות  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">קטפו אותם והם עמדו להתכלות </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>7. זהה את הפרח שבתמונה:</legend>
+                            <p> להוסיף תמונה!</p>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA"> דם המכבים  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">עירית </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC"> חרדל הבר  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">צבעוני האופק </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <img class="triviaFlowes" alt="דרדר כחול" src="shrunked images/trivia/דרדר optimize.png" />
+                            <legend>8. זהה את הפרח שבתמונה:</legend>
+                            <div class="moveAnswers">
+                                <input type="radio" name="answerA" class="answerA" value="answerA">
+                                <label for="answerA"> צבעוני  </label>
+
+                                <input type="radio" name="answerB" class="answerB" value="answerB">
+                                <label for="answerB">אירוס התבור </label>
+                                <br />
+
+                                <input type="radio" name="answerC" class="answerC" value="answerC">
+                                <label for="answerC"> אירוס הגלבוע  </label>
+
+                                <input type="radio" name="answerD" class="answerD" value="answerD">
+                                <label for="answerD">דרדר כחול </label>
+                                <br /><br />
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>9.  כלנית היא פרח שמסמל את אחת הערים בישראל, באיזו עיר מדובר?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">כרמיאל  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">רמת גן </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC"> פתח תקווה  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">גבעתיים </label>
+                            <br /><br />
+                        </fieldset>
+                        <fieldset>
+                            <legend>10. כל הפרחים נסגרים בלילה</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">נכון  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">לא נכון </label>
+
+                        </fieldset>
+                        <div>
+                            <a href="trivia_answers.html" target="_blank">סיימתי! הצג את התשובות</a>
+                            <img class="V" alt="" src="images/trivia/וי.png" />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hardSection">
+                    <hr />
+                    <h2> קשה</h2>
+                    <fieldset>
+                        <legend>1. איזו משפחת פרחים מכילה את המספר הגבוה ביותר של מינים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">משפחת האירוסים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">משפחת השושניים </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">משפחת הוורדיים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">משפחת הסחלביים </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. איך קוראים לחלק המחבר בין הגבעול לפרח?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">גביע  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">גבעולון </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">עוקץ  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אף אחת מהתשובות </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            3.
+                            לפי האגדה, איזה פרח היה השראה לכתר של שלמה?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">כלנית  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">רקפת </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">נרקיס  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> שושן צחור </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            4.
+                            מי אמר את המשפט: "היכן שצומחים פרחים צומחת תקווה"?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">רלף אמרסון  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">שייקספיר </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">ליידי בירד ג’ונסון  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אמא תרזה </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <img class="triviaFlowes" alt="אירוס שחום" src="shrunked images/trivia/אירוס-שחום_optimized.png" />
+                        <legend>
+                            5.
+                            מדוע לא מומלץ לקטוף את האירוס השחום?
+                        </legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">זה לא חוקי  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">הוא קריטי למארג האקולוגי </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">הוא עלול למות  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD"> כל התשובות נכונות </label>
+                            <br /><br />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            6.
+                            איזה אוכל מופק מהצמח הזה?
+                        </legend>
+                        <img class="triviaFlowes" alt="פרג" src="shrunked images/trivia/פרג_optimized.png" />
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">זרעי חמנייה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB"> זרעי פרג </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC"> לחם כוסמין  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD"> חלב סויה </label>
+                            <br /><br />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            7.
+                            מה נכון לגבי כלניות?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">יש להן פקעות מתחת לאדמה  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הצבע שלהן תמיד אדום </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">הן פורחות ביולי-אוגוסט  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> הן חיות רק בישראל </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            8.
+                            רקפת, נרקיס, חצב ואיריס הם דוגמאות לצמחים?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">הלופיטים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הידרופיטים </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">אפיפיטים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> גיאופיטים </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            9.
+                            האבקת הכלנית נעשית?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">על ידי יונקים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">בעזרת הרוח </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC"> על ידי חרקים (חיפושיות זבל ודבורי דבש)  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> על ידי ציפורים </label>
+                        <br /><br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            10.
+                            באיזה אזור בארץ ניתן למצוא את הפרח הנדיר "דרדר גדול פרחים"?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">אזור הגליל והשפלה  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">אזור הגליל התחתון </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">אזור הנגב  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אזור גוש דן </label>
+                        <br /><br />
+                    </fieldset>
+
+
+
+                    <div>
+                        <a href="trivia_answers.html" target="_blank">סיימתי! הצג את התשובות</a>
+                        <img class="V" alt="" src="images/trivia/וי.png" />
+                    </div>
+
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <div>
+                <a href="contactUs.html">צור קשר</a>
+            </div>
+            <div>
+                <a href="odot.html">אודות</a>
+            </div>
+            <div>מפת האתר </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

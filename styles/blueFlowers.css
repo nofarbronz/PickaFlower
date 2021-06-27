@@ -1,0 +1,495 @@
+﻿body {
+    direction: rtl;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1350px;
+    background-color: #fdf6f4;
+    z-index: -1;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+}
+
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.nav1 {
+    z-index: 30;
+    position: relative;
+    top: -120px;
+}
+.nav1flowers {
+    position: relative;
+    top: -250px;
+}
+
+#startHomePage {
+    color: #fdf6f4;
+}
+
+#skipCo {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 30px;
+}
+
+    #skipCo a {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+        #skipCo a:focus, #skipCo a:active {
+            width: 160px;
+            height: 30px;
+            overflow: visible;
+            color: lemonchiffon;
+            background-color: #39593b;
+            text-decoration: none;
+            text-align: center;
+            font-family: gadi-almog-regular-aaa;
+            padding: 7px;
+            margin-right: 600px;
+        }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li a {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li a { /*"מגדיר פרחים, פעילויות, אודות"*/
+    background-color: white;
+    color: #39593b;
+    width: 160px;
+    height: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 13pt;
+    align-self: center;
+    background: #f4c6b8;
+    padding: 1rem 0rem;
+    margin: 0 1rem;
+    outline: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #ff6c6d;
+}
+
+.mainBlocks {
+    background-image: url('../shrunked images/homePage/חץ-למטה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center left;
+}
+
+header nav ul li a { /*"בלוקים ראשיים לפני מעבר עכבר"*/
+    background-color: #fdf6f4;
+}
+
+    header nav ul li a:hover { /*"בלוקים ראשיים אחרי מעבר עכבר"*/
+        background-color: #f4c6b8;
+    }
+
+header .nav1 ul li:hover a { /*"מגדיר פרחים נשאר ורוד כשעוברים לבלוקים מתחתיו"*/
+    background-color: #f4c6b8;
+}
+
+
+header nav ul li ul > li > a { /*"עונות, צבעים, איזורים בארץ, מילון מושגים"*/
+    margin-top: 10px;
+}
+
+.firstMenu {
+    background-image: url('../shrunked images/homePage/חץ-הצידה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left;
+}
+
+header .nav1 ul li ul { /*כל מה שבתוך מגדיר פרחים*/
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+}
+
+header .nav1 ul li:hover > ul { /*"תת התפריט השני נפתח רק במעבר עכבר על הקטגוריה שלו"*/
+    display: block;
+    width: 150px;
+    margin-top: 45px;
+}
+
+.flowerGuideBlocks:link {
+    background-color: #f4c6b8;
+}
+
+.flowerGuideBlocks:hover {
+    background-color: #f9c461;
+}
+
+header nav ul li ul { /*"רווח בין העונות למגדיר פרחים"*/
+    margin-top: 17px;
+}
+
+.seasons {
+    position: relative;
+    top: -55px;
+}
+
+header .nav1 ul li ul > li > ul > li { /*"מרווח בין הבלוקים של הצבעים"*/
+    margin-top: -60px;
+}
+
+
+
+header .nav1 ul li ul > li > ul { /*"מכלול הבלוקים של הצבעים"*/
+    display: none;
+    position: absolute;
+    margin-right: 175px;
+    padding-top: 73px;
+}
+
+header .nav1 ul li > ul > li:hover ul {
+    display: block;
+    width: 150px;
+}
+#logo {
+    font-size: 90pt;
+    text-align: center;
+    color: #39593b;
+    margin-left: 40px;
+    margin-top: 180px;
+    font-family: 'Chewy-Regular';
+}
+
+#tagline {
+    font-size: 20pt;
+    text-align: center;
+    color: #39593b;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: ganclm_bold-webfont;
+}
+
+#smallLogo {
+    position: relative;
+    right: 1040px;
+    top: -10px;
+    width: 270px;
+    height: 110px;
+}
+.smallLogoFlowers {
+    position: relative;
+    right: 1040px;
+    top: -128px;
+    width: 270px;
+    height: 110px
+}
+
+header .nav1 ul li ul li a:link { /*"בלוקים צבעים לפני מעבר עכבר"*/
+    background-color: #f4c6b8;
+}
+
+header .nav1 ul li ul li a:hover { /*"בלוקים צבעים אחרי מעבר עכבר"*/
+    background-color: #f9c461;
+    border: 2px solid #ef8e29;
+}
+
+.spots {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    right: 130px;
+    bottom: 30px;
+}
+
+.regions {
+    position: relative;
+    top: 55px;
+}
+
+#activities {
+    margin-right: 195px;
+    margin-top: 45px;
+}
+
+.team {
+    margin-right: 175px;
+    margin-top: 45px;
+}
+
+.individual {
+    position: relative;
+    top: -55px;
+}
+
+.holidays {
+    position: relative;
+    top: 55px;
+}
+
+.notallowed {
+    cursor: not-allowed;
+}
+
+
+#breadCrums ol li {
+    display: inline-block;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 12pt;
+    text-align: right;
+    position: relative;
+    left: 500px;
+    top: -50px;
+}
+
+    #breadCrums ol li > a {
+        color: darkcyan;
+    }
+
+    #breadCrums ol li:after {
+        content: ">"
+    }
+
+    #breadCrums ol li:last-child:after {
+        content: ""
+    }
+.hallFlowers {
+    display: inline-block;
+    position: relative;
+    right: 100px;
+}
+@font-face {
+    font-family: 'Chewy-Regular';
+    src: url('../fonts/chewy/Chewy-Regular.eot') format('embedded-opentype');
+    src: url('../fonts/chewy/Chewy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ganclm_bold-webfont';
+    src: url('../fonts/gan/ganclm_bold-webfont.eot') format('embedded-opentype');
+    src: url('../fonts/gan/ganclm_bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gadi-almog-regular-aaa';
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.eot') format('embedded-opentype');
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+    src: url('../fonts/giveret levin/GveretLevinAlefAlefAlef-Regular.eot') format('embedded-opentype');
+    src: url('../fonts/giveret levin/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+}
+
+#font {
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+}
+
+.font {
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 6pt;
+    font-weight: bold;
+}
+
+.font1 {
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.font1H {
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#blocks {
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+    #blocks > div {
+        display: inline-block;
+    }
+
+#h1blueFlower {
+    position: relative;
+    top: 25px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 40pt;
+    position: relative;
+    left: 250px;
+}
+
+#activitiesBlock {
+    position: relative;
+    top: -300px;
+    right: 100px;
+}
+
+#odotBlock {
+    position: relative;
+    top: -920px;
+    right: 150px;
+}
+#h1blueFlower {
+    position: relative;
+    top: 25px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 40pt;
+    position:relative;
+    left: 250px;
+}
+#pBlueFlower {
+    line-height: 290%;
+    margin-right: 165px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 14pt;
+    margin-top: 25px;
+}
+
+#bodyinside {
+    
+    position: absolute;
+    top: 25%;
+    /*margin-right: 120px;*/
+    /*  padding-top: 360px;*/
+    width: 200px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#divSpread {
+    background-image: url('../shrunked images/BlueFlowers/TRY BORDER1.jpg');
+    margin-right: 20px;
+    padding-top: -5px;
+    position: relative;
+    right: 100px;
+    /*   padding-bottom: 10px;
+*/ width: 1200px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1000px;
+}
+ #divSpread > div > h2 {
+     position:center;
+        font-family: 'gadi-almog-regular-aaa';
+        color: #39593b;
+        font-size:18pt;
+ }
+ #divSpread > div > span {
+        font-family: 'gadi-almog-regular-aaa';
+        font-weight:bold;
+        color: #39593b;
+    }
+  #divSpread > div {
+        font-family: 'gadi-almog-regular-aaa';
+        color: #39593b;
+    }
+#explain {
+    font-family: 'gadi-almog-regular-aaa';
+    line-height: 200%;
+    position: relative;
+    top: 120px;
+}
+.thumbnail {
+    position: relative;
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 250px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 200px;
+    height: 200px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    bottom: 80%;
+    left: 50%;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    /*left:20%;*/
+    /* top: 50%;
+    left: 50%*/ /*;*/
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.thumbnail:hover .image {
+    opacity: 0.2;
+}
+
+.thumbnail:hover .middle {
+    opacity: 1;
+}
+.text {
+    /*    background-color: whitesmoke;
+*/ color: black;
+    font-size: 20px;
+    padding: 16px 32px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+}
+
+.gray{
+    color: lightslategray;
+}
+
+/*.chosen {
+    background-image: url('images/BlueFlowers/סימון פרח.png');
+    width: 300px;
+    height: 300px;
+}
+
+.expand{
+    margin-right: 120px;
+    padding-top: 20px;
+    width: 1200px;
+    height: 380px;
+    background-image: url('../images/רקע פרח העונה 3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#flower {
+    line-height: 290%;
+    margin-right: 165px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 14pt;
+    margin-top: 25px;
+}*/

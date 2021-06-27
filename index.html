@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>Pick a Flower- עמוד הבית</title>
+    <meta name="description" content="מגדיר פרחים" />
+    <meta name="keywords" content="פרחים, פעילויות, מגדיר פרחים" />
+    <meta name="author" content="עינב, עדן, שובל ונופר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/קישוט פרחים 3.png" alt="" />
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <div id="startHomePage">תחילת עמוד הבית</div>
+            <div id="skipCo">
+                <a href="#logo">דלג לתוכן העמוד</a>
+            </div>
+            <nav class="nav1" aria-label="ניווט מרכזי">
+                <ul>
+                    <li>
+                        <a href="" class="mainBlocks">מגדיר פרחים</a>
+                        <ul>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">עונות</a>
+                                <ul class="seasons">
+                                    <li><a class="notallowed" href="#">סתיו</a></li>
+                                    <li><a class="notallowed" href="#">חורף</a></li>
+                                    <li><a class="notallowed" href="#">אביב</a></li>
+                                    <li><a class="notallowed" href="#">קיץ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" id="colorsBlock" href="#">צבעים</a>
+                                <ul id="colors">
+                                    <li>
+                                        <a class="notallowed" href="#">אדום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-אדום_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">צהוב</a>
+                                        <img class="spots" alt="" src="shrunked images/homePage/כתם-צהוב_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">לבן</a><img class="spots" alt="" src="shrunked images/homePage/כתם-לבן_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ורוד</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ורוד_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ירוק</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ירוק_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a href="blueFlowers.html" target="_blank">כחול</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כחול_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">כתום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כתום_optimized.png" />
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">אזורים בארץ</a>
+                                <ul class="regions">
+                                    <li><a class="notallowed" href="#">גולן</a></li>
+                                    <li><a class="notallowed" href="#">גליל</a></li>
+                                    <li><a class="notallowed" href="#">חיפה והסביבה</a></li>
+                                    <li><a class="notallowed" href="#">מרכז הארץ</a></li>
+                                    <li><a class="notallowed" href="#">השרון</a></li>
+                                    <li><a class="notallowed" href="#">חוף הים</a></li>
+                                    <li><a class="notallowed" href="#">ירושלים והרי יהודה</a></li>
+                                    <li><a class="notallowed" href="#">נגב</a></li>
+                                    <li><a class="notallowed" href="#">ערבה</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="flowerGuideBlocks notallowed" href="#">מילון מושגים</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mainBlocks">פעילויות</a>
+                        <ul id="activities">
+                            <li>
+                                <a href="#" class="firstMenu">אישיות</a>
+                                <ul class="individual">
+                                    <li> <a class="notallowed" href="#">תשחצים</a> </li>
+                                    <li> <a class="notallowed" href="#">תפזורות</a> </li>
+                                    <li> <a class="notallowed" href="#">דפי צביעה</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">קבוצתיות</a>
+                                <ul class="team">
+                                    <li> <a class="notallowed" href="#">בינגו</a> </li>
+                                    <li><a href="trivia.html" target="_blank">טריוויה</a></li>
+                                    <li> <a class="notallowed" href="#">חפש את הפרח</a> </li>
+                                    <li> <a class="notallowed" href="#">הידעת?</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">חגים</a>
+                                <ul class="holidays">
+                                    <li> <a class="notallowed" href="#">ט”ו בשבט</a> </li>
+                                    <li> <a class="notallowed" href="#">פסח</a> </li>
+                                    <li> <a class="notallowed" href="#">שבועות</a> </li>
+                                    <li> <a class="notallowed" href="#">שירים</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="eatFlowers.html">פרחים במטבח</a> </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+            <h1 id="logo">Pick a Flower</h1>
+            <p id="tagline">מגדיר חווייתי לפרחים בארץ ישראל</p>
+            <img id="headerFrameRight" alt="" src="shrunked images/homePage/right-header-frame_optimized.png" />
+            <img id="headerFrameLeft" alt="" src="shrunked images/homePage/left-header-frame_optimized.png" />
+
+            <p>
+                כאן תוכלו למצוא מידע תמציתי ומעניין על פרחים,<br />
+                עם הזדמנות להנות מפעילויות שונות ומגוונות!
+            </p>
+
+        </header>
+        <main>
+            <article>
+                <section id="seasonFlower">
+                    <h2 id="h2seasonFlower">פרח העונה</h2>
+                    <p id="pseasonFlower">
+                        <b>שם:</b> ורוניקה סורית<br />
+                        <b>תפוצה:</b> כל אזורי הארץ מלבד הנגב ובקעת הירדן <br />
+                        <b>פריחה:</b> ינואר עד מרץ <br />
+                        <b>הידעת?</b> נקראת "סורית" כי זוהתה לראשונה בסוריה, <br />
+                        אבל מכיוון שצבעי עלי הכותרת הם של צבעי דגל ישראל - נקראת גם "ורוניקה ציונית".
+                    </p>
+                    <img id="flowersLeaderArrow" alt="" src="shrunked images/homePage/חץ-לחץ-כאן_optimized.png" />
+                    <p id="flowerPageLeader">
+                        מצאתם עוד פרח כחול בטבע?
+                        <a id="flowersClickHere" href="blueFlowers.html"><b> לחצו כאן למידע נוסף על פרחים כחולים</b></a>
+                    </p>
+
+                    <img id="veronika" title="פרח - ורוניקה סורית" alt="פרח - ורוניקה סורית" src="shrunked images/homePage/ורוניקה עמוד בית.png" />
+                </section>
+                <img id="flowerDecoration3" alt="" src="shrunked images/homePage/קישוט-פרחים-3_optimized.png" />
+                <section id="homeTrivia">
+                    <h2 id="h2homeTrivia"> הפעילות החמה באתר - טריוויה!</h2>
+                    <p id="pHomeTrivia">
+                        מזהים את הפרח בתמונה?
+                        <span>(עברו עם העכבר כדי לגלות אם התשובה נכונה)</span>
+                    </p>
+                    <div>
+                        <div id="notcorrect1">
+                            ורד
+                            <br /> <span id="hide1">תשובה לא נכונה</span>
+                        </div>
+                        <div id="correct">
+                            ציפור גן עדן
+                            <br /><span id="hide">תשובה נכונה!</span>
+                        </div><br />
+                        <div id="notcorrect2">
+                            שושן צחור
+                            <br /> <span id="hide2">תשובה לא נכונה</span>
+                        </div>
+                        <div id="notcorrect3">
+                            נחליאלי
+                            <br /> <span id="hide3">תשובה לא נכונה</span>
+                        </div>
+                    </div>
+                    <img id="heavenBird" title="פרח - ציפור גן עדן" alt="פרח - ציפור גן עדן" src="shrunked images/homePage/ציפור-גן-עדן-מתוקן_optimized.png" />
+                    <p id="triviaLeader">
+
+                        <a href="trivia.html" id="triviaClickHere"><b>לחצו כאן למשחק הטריוויה המלא</b></a>
+                    </p>
+
+                    <img id="triviaLeaderArrow" alt="" src="shrunked images/homePage/חץ-לחץ-כאן_optimized.png" />
+                </section>
+                <img id="flowerDecoration4" alt="" src="shrunked images/homePage/קישוט-פרחים-2_optimized.png" />
+                <img id="flowerDecoration2" alt="" src="shrunked images/homePage/קישוט-פרחים-2_optimized.png" />
+                <section class="plant">
+                    <img id="plantOrgansimg" title="הסבר על חלקי הצמח" alt="הסבר על חלקי הצמח" src="shrunked images/homePage/אברי הצמח.png" />
+                    <h2 id="h2plantOrgans">לומדים על חלקי הצמח!</h2>
+                    <p id="pPlantOrgans">
+                        אין על פרחים! אבל האם אתם מכירים את כל חלקי הצמח?<br />
+                        <span>נסו לנחש איזה חלק מתאים לכל מקום</span>
+                    </p>
+                    <div>
+                        <div>אבקנים</div>
+                        <div>עלי כותרת</div>
+                        <div>גבעול</div>
+                        <div>עלה</div>
+                        <div>שורש</div>
+                    </div>
+                </section>
+                <section id="activitiesLeaders">
+                    <div> במגדיר שלנו תוכלו למצוא מידע על פרחים בכל האזורים בארץ! <br /> <b>בואו לגלות אילו פרחים פורחים בסביבה שלכם</b></div>
+                    <div><span> בעמוד הפעילויות תוכלו למצוא מגוון של הפעלות כמו תשחצים, דפי צביעה ועוד- איתם תוכלו להעביר את הזמן בכיף!  <br /> <b>מעבר לפעילויות</b> </span></div>
+                    <div>
+                        <p> אביב הגיע - פסח בא! </p>
+                        <img id="springFlowers" alt="" src="shrunked images/homePage/גרפיקה-אביב-חגים_optimized.png" /> <br /> <b>לפעילויות לכבוד חגי ישראל!</b>
+                    </div>
+                    <a href="#startHomePage">
+                        לחזרה לתחילת עמוד הבית
+                        <img id="backToStart" alt="" src="shrunked images/homePage/חצים-למעלה_optimized.png" />
+                    </a>
+                </section>
+                <section id="activitiesLeaders">
+                    <div> במגדיר שלנו תוכלו למצוא מידע על פרחים בכל האזורים בארץ! <br /> <b>בואו לגלות אילו פרחים פורחים בסביבה שלכם</b></div>
+                    <div><span> בעמוד הפעילויות תוכלו למצוא מגוון של הפעלות כמו תשחצים, דפי צביעה ועוד- איתם תוכלו להעביר את הזמן בכיף!  <br /> <b>מעבר לפעילויות</b> </span></div>
+                    <div>
+                        <p> אביב הגיע - פסח בא! </p>
+                        <img id="springFlowers" alt="" src="shrunked images/homePage/גרפיקה-אביב-חגים_optimized.png" /> <br /> <b>לפעילויות לכבוד חגי ישראל!</b>
+                    </div>
+                    <a href="#startHomePage">
+                        לחזרה לתחילת עמוד הבית
+                        <img id="backToStart" alt="" src="shrunked images/homePage/חצים-למעלה_optimized.png" />
+                    </a>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div>
+                <a href="contactUs.html">צור קשר</a>
+            </div>
+            <div>
+                <a href="odot.html">אודות</a>
+            </div>
+           
+            <div><a href="siteMap.html">מפת האתר  </a> </div>
+        </footer>
+        <img id="flowerDecoration1" alt="" src="shrunked images/homePage/קישוט-פרחים-1_optimized.png" />
+
+    </div>
+
+</body>
+</html>

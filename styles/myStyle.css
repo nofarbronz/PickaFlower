@@ -1,0 +1,697 @@
+﻿body {
+    direction: rtl;
+    background-color: #fdf6f4;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url('../shrunked images/homePage/רקע-ראשי4_optimized.png');
+    background-repeat: no-repeat;
+}
+
+#startHomePage {
+    color: #fdf6f4;
+}
+
+#skipCo {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 30px;
+}
+
+    #skipCo a {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+        #skipCo a:focus, #skipCo a:active {
+            width: 160px;
+            height: 30px;
+            overflow: visible;
+            color: lemonchiffon;
+            background-color: #39593b;
+            text-decoration: none;
+            text-align: center;
+            font-family: gadi-almog-regular-aaa;
+            padding: 7px;
+            margin-right: 600px;
+        }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li a {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li a { /*"מגדיר פרחים, פעילויות, אודות"*/
+    background-color: white;
+    color: #39593b;
+    width: 160px;
+    height: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 13pt;
+    align-self: center;
+    background: #f4c6b8;
+    padding: 1rem 0rem;
+    margin: 0 1rem;
+    outline: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #ff6c6d;
+}
+
+.mainBlocks {
+    background-image: url('../shrunked images/homePage/חץ-למטה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center left;
+}
+
+header nav ul li a { /*"בלוקים ראשיים לפני מעבר עכבר"*/
+    background-color: #fdf6f4;
+}
+
+    header nav ul li a:hover { /*"בלוקים ראשיים אחרי מעבר עכבר"*/
+        background-color: #f4c6b8;
+    }
+
+header .nav1 ul li:hover a { /*"מגדיר פרחים נשאר ורוד כשעוברים לבלוקים מתחתיו"*/
+    background-color: #f4c6b8;
+}
+
+
+header nav ul li ul > li > a { /*"עונות, צבעים, איזורים בארץ, מילון מושגים"*/
+    margin-top: 10px;
+}
+
+.firstMenu {
+    background-image: url('../shrunked images/homePage/חץ-הצידה_optimized.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left;
+}
+
+header .nav1 ul li ul { /*כל מה שבתוך מגדיר פרחים*/
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+}
+
+header .nav1 ul li:hover > ul { /*"תת התפריט השני נפתח רק במעבר עכבר על הקטגוריה שלו"*/
+    display: block;
+    width: 150px;
+    margin-top: 45px;
+}
+
+.flowerGuideBlocks:link {
+    background-color: #f4c6b8;
+}
+
+.flowerGuideBlocks:hover {
+    background-color: #f9c461;
+}
+
+header nav ul li ul { /*"רווח בין העונות למגדיר פרחים"*/
+    margin-top: 17px;
+}
+
+.seasons {
+    position: relative;
+    top: -55px;
+}
+
+header .nav1 ul li ul > li > ul > li { /*"מרווח בין הבלוקים של הצבעים"*/
+    margin-top: -60px;
+}
+
+
+
+header .nav1 ul li ul > li > ul { /*"מכלול הבלוקים של הצבעים"*/
+    display: none;
+    position: absolute;
+    margin-right: 175px;
+    padding-top: 73px;
+}
+
+header .nav1 ul li > ul > li:hover ul {
+    display: block;
+    width: 150px;
+}
+
+
+
+header .nav1 ul li ul li a:link { /*"בלוקים צבעים לפני מעבר עכבר"*/
+    background-color: #f4c6b8;
+}
+
+header .nav1 ul li ul li a:hover { /*"בלוקים צבעים אחרי מעבר עכבר"*/
+    background-color: #f9c461;
+    border: 2px solid #ef8e29;
+}
+
+.spots {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    right: 130px;
+    bottom: 30px;
+}
+
+.regions {
+    position: relative;
+    top: 55px;
+}
+
+#activities {
+    margin-right: 195px;
+    margin-top: 45px;
+}
+
+.team {
+    margin-right: 175px;
+    margin-top: 45px;
+}
+
+.individual {
+    position: relative;
+    top: -55px;
+}
+
+.holidays {
+    position: relative;
+    top: 55px;
+}
+
+.notallowed {
+    cursor: not-allowed;
+}
+
+/*עיצוב דף הבית*/
+@font-face {
+    font-family: 'Chewy-Regular';
+    src: url('../fonts/chewy/Chewy-Regular.eot') format('embedded-opentype');
+    src: url('../fonts/chewy/Chewy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ganclm_bold-webfont';
+    src: url('../fonts/gan/ganclm_bold-webfont.eot') format('embedded-opentype');
+    src: url('../fonts/gan/ganclm_bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gadi-almog-regular-aaa';
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.eot') format('embedded-opentype');
+    src: url('../fonts/gadi-almog/gadi-almog-regular-aaa.ttf') format('truetype');
+}
+
+#logo {
+    font-size: 90pt;
+    text-align: center;
+    color: #39593b;
+    margin-left: 40px;
+    margin-top: 180px;
+    font-family: 'Chewy-Regular';
+}
+
+#tagline {
+    font-size: 20pt;
+    text-align: center;
+    color: #39593b;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: ganclm_bold-webfont;
+}
+
+header p {
+    padding-right: 110px;
+    margin-bottom: 250px;
+    font-size: 15pt;
+    text-align: center;
+    font-family: 'gadi-almog-regular-aaa';
+    line-height: 200%;
+}
+
+#headerFrameRight {
+    position: relative;
+    top: 53px;
+    right: 333px;
+    width: 130px;
+    height: 120px;
+}
+
+#headerFrameLeft {
+    position: relative;
+    top: 130px;
+    right: 811px;
+    width: 130px;
+    height: 120px
+}
+
+#seasonFlower {
+    margin-right: 120px;
+    padding-top: 235px;
+    width: 1200px;
+    height: 380px;
+    background-image: url('../shrunked images/homePage/רקע-פרח-העונה-3_optimized.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#h2seasonFlower {
+    position: relative;
+    top: -80px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    text-align: center;
+    font-size: 32pt;
+}
+
+#pseasonFlower {
+    line-height: 290%;
+    margin-right: 165px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 14pt;
+    margin-top: -90px;
+}
+
+section p b {
+    line-height: 200%;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+}
+
+    section p b:link {
+        color: #39593b;
+    }
+
+#flowerPageLeader {
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    margin-right: 150px;
+    margin-top: -22px;
+    font-size: 14pt;
+    width: 675px;
+    height: 50px;
+}
+
+#veronika {
+    margin-right: 780px;
+    position: relative;
+    bottom: 380px;
+    width: 200px;
+    height: 200px;
+}
+
+#flowersLeaderArrow {
+    width: 50px;
+    height: 60px;
+    padding-right: 70px;
+    padding-top: 10px;
+}
+
+#flowersClickHere {
+    position: relative;
+    right: -15px;
+    font-size: 12pt;
+    border-radius: 255px 90px 225px 90px/90px 225px 90px 255px;
+    border: 3px solid #ef8e29;
+    background: #f1c166;
+    padding: 0rem 1rem;
+    margin: 0 1rem;
+    transition: all .3s ease;
+    outline: none;
+}
+
+
+#flowerDecoration3 {
+    width: 360px;
+    height: 340px;
+    position: relative;
+    left: 55px;
+}
+
+#homeTrivia {
+    margin-right: 40px;
+    margin-top: -165px;
+    padding-top: 80px;
+    width: 1190px;
+    height: 340px;
+    background-image: url('../images/רקע טריוויה עמוד בית 2.png');
+    background-repeat: no-repeat;
+}
+
+#h2homeTrivia {
+    position: relative;
+    right: 90px;
+    bottom: 15px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: lemonchiffon;
+    text-align: center;
+    font-size: 27pt;
+}
+
+#pHomeTrivia {
+    margin-right: 215px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: lemonchiffon;
+    font-size: 17pt;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#homeTrivia p span {
+    color: lemonchiffon;
+    font-size: 13pt;
+    position: relative;
+    top: 1px;
+}
+
+#homeTrivia div div {
+    background-color: lemonchiffon;
+    width: 165px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 40px 310px -10px -280px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 12pt;
+    color: #39593b;
+    font-weight: bold;
+}
+
+    #homeTrivia div div:hover {
+        background-color: #FF7A7B;
+    }
+
+#homeTrivia div #correct:hover {
+    background-color: lightgreen;
+}
+
+    #homeTrivia div #correct:hover #hide {
+        background-color: lightgreen;
+        opacity: 1;
+    }
+
+#homeTrivia div #notcorrect1:hover #hide1 {
+    background-color: #FF7A7B;
+    opacity: 1;
+}
+
+#homeTrivia div #notcorrect2:hover #hide2 {
+    background-color: #FF7A7B;
+    opacity: 1;
+}
+
+#homeTrivia div #notcorrect3:hover #hide3 {
+    background-color: #FF7A7B;
+    opacity: 1;
+}
+
+
+#hide {
+    background-color: lightgreen;
+    opacity: 0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#hide1 {
+    opacity: 0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#hide2 {
+    opacity: 0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#hide3 {
+    opacity: 0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#heavenBird {
+    margin-right: 860px;
+    position: relative;
+    bottom: 165px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+#homeTrivia p b {
+    color: #39593b;
+    font-size: 12pt;
+    position: relative;
+    bottom: 128px;
+    right: 203px;
+    text-decoration: none;
+}
+
+#triviaLeader b {
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 12pt;
+    width: 355px;
+    height: 50px;
+    border-radius: 255px 90px 225px 90px/90px 225px 90px 255px;
+    border: 3px solid #ef8e29;
+    background: #f1c166;
+    padding: 0rem 1rem;
+    margin: 0 1rem;
+    transition: all .3s ease;
+    outline: none;
+}
+
+#triviaLeaderArrow {
+    width: 50px;
+    height: 60px;
+    position: relative;
+    bottom: 200px;
+    right: 150px;
+}
+
+#flowerDecoration4 {
+    width: 225px;
+    height: 310px;
+    position: relative;
+    top: 300px;
+    transform: rotate(180deg);
+}
+
+#flowerDecoration2 {
+    width: 225px;
+    height: 310px;
+    position: relative;
+    right: 895px;
+}
+
+.plant {
+    /* border: 2px dashed darksalmon;*/
+    width: 843px;
+    height: 360px;
+    padding-right: 0px;
+    margin-top: -225px;
+    margin-right: 200px;
+}
+
+#plantOrgansimg {
+    position: relative;
+    top: 50px;
+    right: 670px;
+    width: 200px;
+    height: 330px;
+}
+
+#h2plantOrgans {
+    position: relative;
+    left: 220px;
+    bottom: 280px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    text-align: center;
+    font-size: 27pt;
+}
+
+#pPlantOrgans {
+    position: relative;
+    bottom: 220px;
+    font-family: 'gadi-almog-regular-aaa';
+    color: #39593b;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.plant > div > div {
+    position: relative;
+    right: 40px;
+    bottom: 100px;
+    line-height: 307%;
+    font-family: 'gadi-almog-regular-aaa';
+    font-size: 10pt;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #ff6c6d;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.plant p span {
+    font-size: 12pt;
+}
+
+
+
+.plant > div > p {
+    position: relative;
+    right: 650px;
+    bottom: 393px;
+}
+
+#3 {
+    margin-bottom: 20px;
+}
+
+#activitiesLeaders {
+    background-image: url('../shrunked images/homePage/רקעים-פוטר-3_optimized.png');
+    background-repeat: no-repeat;
+    width: 1250px;
+    height: 330px;
+    margin-top: 40px;
+    margin-bottom: 230px;
+}
+
+    #activitiesLeaders > div {
+        display: inline-block;
+        text-align: center;
+        width: 223px;
+        position: relative;
+        top: 12px;
+        right: 230px;
+        margin-left: 123px;
+        font-size: 13pt;
+        font-family: 'gadi-almog-regular-aaa';
+        line-height: 150%;
+        color: bisque;
+    }
+
+        #activitiesLeaders > div > b {
+            font-size: 13pt;
+            font-family: 'gadi-almog-regular-aaa';
+            position: relative;
+            top: 55px;
+            color: bisque;
+        }
+
+#springFlowers {
+    width: 250px;
+    height: 105px;
+    position: relative;
+    left: 13px;
+    top: 55px;
+}
+
+span {
+    color: #39593b;
+    font-size: 13pt;
+    font-family: 'gadi-almog-regular-aaa';
+    position: relative;
+    top: 15px;
+}
+
+    span > b {
+        color: #39593b;
+        font-size: 13pt;
+        font-family: 'gadi-almog-regular-aaa';
+        position: relative;
+        top: 15px;
+    }
+
+#activitiesLeaders > div > p {
+    position: relative;
+    top: 50px;
+    font-size: 13pt;
+    font-family: 'gadi-almog-regular-aaa';
+}
+
+#activitiesLeaders a {
+    position: relative;
+    right: 65px;
+    top: 240px;
+    color: #39593b;
+    font-size: 15pt;
+    font-family: 'gadi-almog-regular-aaa';
+    text-align: center;
+    font-weight: bold;
+    width: 355px;
+    height: 40px;
+    border-radius: 255px 90px 225px 90px/90px 225px 90px 255px;
+    border: 3px solid #ef8e29;
+    background: #f1c166;
+    padding: 0rem 2rem;
+    margin: 0px 27rem;
+    transition: all .3s ease;
+    outline: none;
+    text-decoration: none;
+}
+
+#backToStart {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+}
+
+    #backToStart:focus, #backToStart:active {
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        overflow: visible;
+    }
+
+footer {
+    background-image: url('../shrunked images/homePage/מסגרת-פוטר2_optimized.png');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 300px;
+    margin-bottom: -200px;
+}
+
+    footer div {
+        display: inline-block;
+        width: 223px;
+        position: relative;
+        top: 100px;
+        right: 277px;
+        margin-left: 123px;
+        font-size: 15pt;
+        font-family: 'gadi-almog-regular-aaa';
+        color: #39593b;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+#flowerDecoration1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}

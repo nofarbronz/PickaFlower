@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תשובות לטריוויה- Pick a Flower</title>
+    <meta name="description" content="משחק טריוויה מגדיר פרחים" />
+    <meta name="keywords" content="פרחים, פעילויות, מגדיר פרחים, טריוויה, משחק, תחרות" />
+    <meta name="author" content="עינב, עדן, שובל ונופר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/trivia_answers.css" rel="stylesheet" />
+    <!--<link href="styles/myStyle.css" rel="stylesheet" />-->
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/קישוט פרחים 3.png" alt="" />
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html"><img id="smallLogo" src="shrunked images/homePage/לוגו-קטן_optimized.png" /></a>
+            <div id="skipCo">
+                <a href="#h1trivia">דלג לתוכן העמוד</a>
+            </div>
+            <nav class="nav1" aria-label="ניווט מרכזי">
+                <ul>
+                    <li>
+                        <a href="" class="mainBlocks">מגדיר פרחים</a>
+                        <ul>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">עונות</a>
+                                <ul class="seasons">
+                                    <li><a class="notallowed" href="#">סתיו</a></li>
+                                    <li><a class="notallowed" href="#">חורף</a></li>
+                                    <li><a class="notallowed" href="#">אביב</a></li>
+                                    <li><a class="notallowed" href="#">קיץ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" id="colorsBlock" href="#">צבעים</a>
+                                <ul id="colors">
+                                    <li>
+                                        <a class="notallowed" href="#">אדום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-אדום_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">צהוב</a>
+                                        <img class="spots" alt="" src="shrunked images/homePage/כתם-צהוב_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">לבן</a><img class="spots" alt="" src="shrunked images/homePage/כתם-לבן_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ורוד</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ורוד_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">ירוק</a><img class="spots" alt="" src="shrunked images/homePage/כתם-ירוק_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a href="blueFlowers.html" target="_blank">כחול</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כחול_optimized.png" />
+                                    </li>
+                                    <li>
+                                        <a class="notallowed" href="#">כתום</a><img class="spots" alt="" src="shrunked images/homePage/כתם-כתום_optimized.png" />
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flowerGuideBlocks firstMenu" href="#">אזורים בארץ</a>
+                                <ul class="regions">
+                                    <li><a class="notallowed" href="#">גולן</a></li>
+                                    <li><a class="notallowed" href="#">גליל</a></li>
+                                    <li><a class="notallowed" href="#">חיפה והסביבה</a></li>
+                                    <li><a class="notallowed" href="#">מרכז הארץ</a></li>
+                                    <li><a class="notallowed" href="#">השרון</a></li>
+                                    <li><a class="notallowed" href="#">חוף הים</a></li>
+                                    <li><a class="notallowed" href="#">ירושלים והרי יהודה</a></li>
+                                    <li><a class="notallowed" href="#">נגב</a></li>
+                                    <li><a class="notallowed" href="#">ערבה</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="flowerGuideBlocks notallowed" href="#">מילון מושגים</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mainBlocks">פעילויות</a>
+                        <ul id="activities">
+                            <li>
+                                <a href="#" class="firstMenu">אישיות</a>
+                                <ul class="individual">
+                                    <li> <a class="notallowed" href="#">תשחצים</a> </li>
+                                    <li> <a class="notallowed" href="#">תפזורות</a> </li>
+                                    <li> <a class="notallowed" href="#">דפי צביעה</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">קבוצתיות</a>
+                                <ul class="team">
+                                    <li> <a class="notallowed" href="#">בינגו</a> </li>
+                                    <li><a href="trivia.html" target="_blank">טריוויה</a></li>
+                                    <li> <a class="notallowed" href="#">חפש את הפרח</a> </li>
+                                    <li> <a class="notallowed" href="#">הידעת?</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="firstMenu">חגים</a>
+                                <ul class="holidays">
+                                    <li> <a class="notallowed" href="#">ט”ו בשבט</a> </li>
+                                    <li> <a class="notallowed" href="#">פסח</a> </li>
+                                    <li> <a class="notallowed" href="#">שבועות</a> </li>
+                                    <li> <a class="notallowed" href="#">שירים</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="eatFlowers.html">פרחים במטבח</a> </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+            <nav id="breadCrums">
+                <ol>
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li>פעילויות</li>
+                    <li>קבוצתיות</li>
+                    <li>
+                        <a href="../trivia.html">טריוויה</a>
+                    </li>
+                    <li>טריוויה - תשובות</li>
+                </ol>
+            </nav>
+            <pre>
+
+
+
+</pre>
+            <h1>טריוויה - תשובות</h1>
+            <p>
+
+                צריך לפחות 8 תשובות נכונות בכל רמה כדי להיות מלך או מלכת הפרחים! <br />
+                אז בכמה שאלות צדקתם?
+            </p>
+        </header>
+        <main>
+            <img id="headerDecoration" src="shrunked images/homePage/קישור-לעמוד-טריוויה_optimized.png" />
+            <article>
+                <section id="easySection">
+                    <hr />
+                    <h2> קל</h2>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: רקפת </div>
+                        <img class="triviaFlowes" src="shrunked images/trivia/רקפת-חו_optimized.png" />
+                        <legend>1. כיצד נקרא הפרח המופיע בתמונה?</legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA" class="correct">רקפת  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">פרג </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">צבעוני  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">חרצית </label>
+                            <br /><br />
+                        </div>
+                        <div class="explenation moveBlock1"> הרקפת היא צמח רב-שנתי הנפוץ בעיקר באזורים הקרים והממוזגים של כדור הארץ מאירופה ועד איראן. בישראל נפוצים שני מיני רקפת – רקפת יוונית ורקפת מצויה. בארץ היא צמח מוגן ואסור לקטוף אותה. </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: ורד </div>
+                        <img class="triviaFlowes" src="shrunked images/trivia/סביון-חו_optimized.png" />
+                        <legend>2. כיצד נקרא הפרח המופיע בתמונה?</legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA" class="correct">ורד  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">רקפת </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">צבעוני  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">סביון </label>
+                            <br /><br />
+                        </div>
+                        <div class="explenation moveBlock1">
+                            ורד הוא סוג פרח ממשפחת הוורדיים. הוורד מונה בין 200 ל-250 מינים, שיחים או מטפסים רב-שנתיים, קוצניים; והוא נפוץ בעשרות צבעים וגוונים שונים. אורך העלים ברוב מיני הוורדים נע בין 5 ל-15 ס"מ.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: עלים אדומים ובפנים שחור </div>
+                        <legend>3. איך נראית כלנית?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">עלים אדומים ובפנים שחור  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">עלים כחולים ובפנים אדום </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">עלים אדומים ובפנים ירוק  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">עלים ירוקים ובפנים צהוב </label>
+                        <br /><br />
+                        <div class="explenation">
+                            הכלנית (נקראת גם: שושנת המלך), היא סוג פרח ממשפחת הנוריתיים בו כ-120 מינים הנפוצים בכל העולם מלבד אוסטרליה ואנטארקטיקה.
+                            הכלנית הינה צמח מוגן אשר נפוץ מצפון הארץ עד הר הנגב.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: חמציץ </div>
+                        <legend>4. מה מהצמחים הבאים הוא צמח אכיל?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">רקפת  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">כלנית </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="correct">חמציץ  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אין כזה צמח בכלל </label>
+                        <br /><br />
+                        <div class="explenation"> חמציץ הוא הסוג המגוון והנפוץ ביותר במשפחת החמציציים. מבין כ-900 מיני חמציציים, 800 שייכים לסוג זה. תפוצתם גדולה במיוחד באזורים הטרופיים של ברזיל ומקסיקו, כמו גם בדרום אפריקה. לחמציץ שימושים גם במטבח- ביניהם תיבול לסלט ותוספת לתבשילים.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: רקפת </div>
+                        <legend>5. מה מהפרחים הבאים הוא פרח ורוד?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">רקפת  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">כלנית </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">צבעוני  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">פרג </label>
+                        <br /><br />
+                        <div class="explenation"> בחורף הרקפת נמצאת בשיא פריחתה. החורף מביא איתו גשמי ברכה אבל אם אבקני הרקפת יירטבו הם יפסיקו לתפקד. זאת בעיה הדורשת פתרון. הרקפת תולה את פרחייה הפוך, כפופים כלפי מטה וכך היא מגנה על האבקנים מפני הגשם ובעצם יוצרת מטרייה המגנה מפני הגשם.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: על פי צורת הפרח. </div>
+                        <legend>6. כיצד נבחין בין כלנית, נורית ופרג?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="easyQu6">זמן פריחתם- כלנית-> נורית -> פרג  </label>
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB" class="easyQu6 correct">על פי צורת הפרח </label>
+                        <br />
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="easyQu6">שלושתם פורחים במקומות שונים בארץ  </label>
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD" class="easyQu6">על פי גובהם. </label>
+                        <br /><br />
+                        <div class="explenation">
+                            הכלנית היא הראשונה לפרוח מבין השלוש – בחודשים ינואר-מרץ.
+                            הנורית היא השנייה בסדר הפריחה והיא פורחת בחודשים מרץ עד מאי.
+                            הפרג הוא השלישי בסדר הפריחה והוא פורח בחודשים מרץ-מאי.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: בתחילת האביב </div>
+                        <legend>7. מתי כדאי לראות אירוסים פורחים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">בתחילת האביב  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">בשיא הקיץ </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">בסוף החורף  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">בסוף האביב </label>
+                        <br /><br />
+                        <div class="explenation">
+                            אירוס (או איריס) הוא סוג במשפחת האירוסיים. בסוג כ-300 מינים, שהם גאופיטים רב-שנתיים, הנפוצים ברוב אזורי העולם כצמחי בר או נוי.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: ורוד </div>
+                        <legend>8. באיזה צבע הפרחים של כליל החורש?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">כתום  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB" class="correct">ורוד </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">תכלת  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אדום </label>
+                        <br /><br />
+                        <div class="explenation"> כליל החורש הוא עץ נשיר של החורש הים תיכוני הפורח בטרם הוא מלבלב. הגוון הורוד ארגמני של פרחיו וכמותם המרשימה על העץ מצדיקים את השם שניתן לו כליל היופי של החורש. העץ מגיע לגובה של 10-3 מטרים.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: כן </div>
+                        <legend>9. האם קיים פרח בשם ירוקת החמור?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">כן  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">לא </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">כן אבל הוא נפוץ רק במצרים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">לא הוא נכחד </label>
+                        <br /><br />
+                        <div class="explenation">
+                            הורדים זקוקים להשקיות רצופות וסובלים ביובש. לא נדרשת להם לחות אויר גבוהה, אך באיזורים יבשים נדרשים יותר מים.
+                            תמיד יש להעדיף השקיה שאינה מרטיבה את עלי הורד. על-כן רצויה השקיה בטפטפות או במתזים מתחת לנוף. ולא בממטרות!!!
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: על שיח </div>
+                        <legend>10. באיזה אופן צומחים ורדים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">על עץ  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הם פקעות, ולכן צומחים מהאדמה </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="correct">על שיח  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">צמח מטפס </label>
+                        <br /><br />
+                        <div class="explenation">מרוות ירושלים היא עשבוני רב-שנתי, אולי הידוע ביותר במיני המרווה. זקוף, גובהו 80 ס"מ ויותר. פרח זה שימש השראה לעיצוב מנורת בית-המקדש,  בשם "מרוה" קיים רמז לכך, מתוך הדמיון במילים מרוה–מוריה. פורחת ממרס עד יוני, מואבקת על-ידי דבורים גדולות.</div>
+                    </fieldset>
+                    <div>
+                        <a href="index.html">חזרה לעמוד הבית</a>
+
+                    </div>
+                </section>
+
+
+                <section id="mediumSection">
+                    <hr />
+                    <div>
+                        <h2> בינוני</h2>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: ורד ורוד </div>
+                            <legend>1. מאיזה פרח נוצרה המנורה בסמל מדינת ישראל?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">כלנית אדומה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB" class="correct">ורד ורוד </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מרוות ירושלים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">פרח הציפור </label>
+                            <br /><br />
+                            <div class="explenation"> קיימת אמונה כי אם לקבוצת הוורדים שלך פרחים פתוחים זה מסמל אהבה שכבר פרחה, ואילו ניצנים סגורים היטב מייצגים רגש לא מוצהר.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: כל התשובות נכונות </div>
+                            <legend>2. מה תפקידו של גבעול הפרח?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">להוביל מים ומינרלים מהשורש לצמח  </label>
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">להוביל סוכרים מהעלים לצמח </label>
+                            <br />
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">לקשר בין השורש לצמח  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD" class="correct">כל התשובות נכונות </label>
+                            <br /><br />
+                            <div class="explenation"> אגדה יפה שמקורה ביוונית, מספרת כיצד נוצר הנרקיס. בין הרי הגליל התהלך בימי קדם רועה בעל פנים עגולים ותלתלי זהב לו, ושמו נרקיס. כל הנערות דברו ביופיו הרב והוא לא ידע מימיו כי יפה הוא, פעם ירד עם צאנו ממורדות הכרמל, כשפניו מועדות אל הרי הגליל, כשעבר את נחל קישון ראה את בבואתו במים וטבע. במקום שטבע צץ פרח, שכותרתו לבנה ועגולה המזכירה את פני הרועה והכוס הצהובה אשר בכותרת מזכירה את תלתלי הזהב שלו.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: מלך הביצה </div>
+                            <legend>3.     פרח הנרקיס מוכר גם בשם ___.            </legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">נרקיס הביצה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB" class="correct">מלך הביצה </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מלך הנחלים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">אף אחת מהתשובות </label>
+                            <br /><br />
+                            <div class="explenation"> אגדה יפה שמקורה ביוונית, מספרת כיצד נוצר הנרקיס. בין הרי הגליל התהלך בימי קדם רועה בעל פנים עגולים ותלתלי זהב לו, ושמו נרקיס. כל הנערות דברו ביופיו הרב והוא לא ידע מימיו כי יפה הוא, פעם ירד עם צאנו ממורדות הכרמל, כשפניו מועדות אל הרי הגליל, כשעבר את נחל קישון ראה את בבואתו במים וטבע. במקום שטבע צץ פרח, שכותרתו לבנה ועגולה המזכירה את פני הרועה והכוס הצהובה אשר בכותרת מזכירה את תלתלי הזהב שלו.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: כולם פורחים לפרחים צהובים </div>
+                            <legend>4. מה משותף לחרדל השדה, חרצית עטורה וסביון אביבי?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">כולם פורחים בסתיו  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB" class="correct">כולם פורחים לפרחים צהובים  </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">מהעלים שלהם מייצרים תבלינים  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">הם היו נפוצים בישראל בעבר אך נכחד </label>
+                            <br /><br />
+                            <div class="explenation"> סביון אביבי הוא אחד הצמחים הנפוצים ביותר והבולטים בנוף הארץ למרות גודלו הזעיר. זהו צמח חד-שנתי קטן, גובהו 15 ס"מ, לכל היותר 25 ס"מ. הוא פורח בהמוניו במשך תקופה ארוכה וממלא בפריחתו את הנוף בכתמים נרחבים.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: כיוון שקטפו אותם והם עמדו להתכלות </div>
+                            <legend>5. מדוע נקבע החוק להגנת פרחי הבר בישראל?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">הם היו יפים יותר מהפרחים במשתלות  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB"> בכל העולם יש חוק כזה </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">היה צורך להרחיק אותם מהחיות  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD" class="correct">קטפו אותם והם עמדו להתכלות </label>
+                            <br /><br />
+                            <div class="explenation">
+                                "החברה להגנת הטבע", שאימצה את פרח הבר המוגן "אירוס הגלבוע" כסמלה, ניהלה לפני מספר שנים קמפיין ציבורי להפסקת קטיף פרחי הבר. וזה באמת עבד. ילדים למדו שאסור לקטוף פרחים מוגנים ולימדו גם את הוריהם, ולכן אנו יכולים לראות כיום מרבדים עצומים של פרחי בר צבעוניים ומרהיבים. אולם, בשנים האחרונות, למרבה הצער, ילדים וגם מבוגרים שיוצאים לטייל בחיק הטבע פשוט לא מודעים לחוקים ולכללים וקוטפים פרחים נדירים בלי להבין את חומרת המעשה.
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns">התשובה הנכונה: לשון פר סמורה</div>
+                            <legend>6. זהה את הפרח שבתמונה:</legend>
+                            <img class="triviaFlowes" src="shrunked images/BlueFlowers/לשון-פר-סמורה-לא-בטוחה_optimized.png" />
+                            <input type="radio" name="answerA" class="answerA movingAns movingAnsUp" value="answerA">
+                            <label for="answerA" class="movingAns movingAnsUp"> דם המכבים  </label>
+
+                            <input type="radio" name="answerB" class="answerB movingAns movingAnsUp" value="answerB">
+                            <label for="answerB" class="movingAns movingAnsUp">עירית </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC movingAnsUp" value="answerC">
+                            <label for="answerC" class="movingAnsUp correct"> לשון פר סמורה  </label>
+
+                            <input type="radio" name="answerD" class="answerD movingAnsUp" value="answerD">
+                            <label for="answerD" class="movingAnsUp">צבעוני האופק </label>
+                            <br /><br />
+                            <div class="explenation moveBlock1">ניתן להשתמש בצמח לשון פר סמורה לרפואה בעזרת העלים והשורש. ניתן לרפא פצעים בעור על ידי הנחת עלים כתושים על הפצע. כמו כן ניתן לרקוח משחה מהעלים הכתושים ובתוספת שמן זית לרפא כוויות. חליטת העלים ושתיית החליטה, משמשת נגד תולעים ושטפי דם.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: דרדר כחול </div>
+                            <img class="triviaFlowes" src="shrunked images/trivia/דרדר optimize.png" />
+                            <legend>7. זהה את הפרח שבתמונה:</legend>
+                            <div class="moveAnswers">
+                                <input type="radio" name="answerA" class="answerA" value="answerA">
+                                <label for="answerA"> צבעוני  </label>
+
+                                <input type="radio" name="answerB" class="answerB" value="answerB">
+                                <label for="answerB">אירוס התבור </label>
+                                <br />
+
+                                <input type="radio" name="answerC" class="answerC" value="answerC">
+                                <label for="answerC"> אירוס הגלבוע  </label>
+
+                                <input type="radio" name="answerD" class="answerD" value="answerD">
+                                <label for="answerD" class="correct">דרדר כחול </label>
+                                <br /><br />
+                            </div>
+                            <div class="explenation moveBlock1">
+                                הצמח גדל בבתה בשפלה המרכזית ובהר. לזרעונים חסרה "ציצית" - המופיעה בצמחים אחרים ממשפחה זו. הציצית היא קבוצת שערות או מוצים ארוכים בראש הזרעונים ותורמים להסעתם. הפריחה היא בחודשים פברואר עד אפריל.
+
+                                הדרדר הכחול הוא מין אנדמי לארץ ישראל, ירדן, סוריה, לבנון וקפריסין. בניגוד לכמה מינים אחרים בסוג דרדר שחפי המעטפת שלהם קוצניים, הדרדר הכחול אינו קוצני. הדרדר הכחול הוא ערך טבע מוגן בישראל
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: כרמיאל </div>
+                            <legend>8.  כלנית היא פרח שמסמל את אחת הערים בישראל, באיזו עיר מדובר?</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA" class="correct">כרמיאל  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">רמת גן </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC"> פתח תקווה  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD">גבעתיים </label>
+                            <br /><br />
+                            <div class="explenation"> הסמל של העיר כרמיאל מורכב ממגן בעל מסגרת כחולה ושדה לבן אשר בתחתיתו הכיתוב "כרמיאל". הכלנית היא פרח הבר הנפוץ ביותר באיזור ולכן היא חלק מהסמל.</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="rightAns"> התשובה הנכונה היא: לא נכון </div>
+                            <legend>9. כל הפרחים נסגרים בלילה</legend>
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">נכון  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB" class="correct">לא נכון </label>
+
+                        </fieldset>
+                        <div>
+                            <a href="index.html">חזרה לעמוד הבית</a>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hardSection">
+                    <hr />
+                    <h2> קשה</h2>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: משפחת הסחלביים </div>
+                        <legend>1. איזו משפחת פרחים מכילה את המספר הגבוה ביותר של מינים?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">משפחת האירוסים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">משפחת השושניים </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">משפחת הוורדיים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD" class="correct">משפחת הסחלביים </label>
+                        <br /><br />
+                        <div class="explenation"> המשפחה מונה יותר מ-600 סוגים וכ-30000 מינים. במשפחה מינים וזנים רבים שטופחו בידי האדם. רבים מהם נוצרו באמצעות הכלאות בין מינים שונים (היברידים). וכך בכל שנה מתרחבת המשפחה ונוצרים עשרות מינים חדשים.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: עוקץ </div>
+                        <legend>2. איך קוראים לחלק המחבר בין הגבעול לפרח?</legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">גביע  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">גבעולון </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="correct">עוקץ  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אף אחת מהתשובות </label>
+                        <br /><br />
+                        <div class="explenation">
+                            העוקץ הוא למעשה גבעול המחבר פרח בודד לתפרחת - נמצא ממש מתחת לפרח ובמעלה הגבעול.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: רקפת </div>
+                        <legend>
+                            3.
+                            לפי האגדה, איזה פרח היה השראה לכתר של שלמה?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">כלנית  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB" class="correct">רקפת </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">נרקיס  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> שושן צחור </label>
+                        <br /><br />
+                        <div class="explenation">
+                            3 עובדות על הרקפת: <br />
+                            1. גבעול הרקפת הוא פקעת רב שנתית שנפחה הולך וגדל משנה לשנה. <br />
+                            2. הזרעים שלה מופצים בעיקר ע"י נמלים. <br />
+                            3. לרקפת 5 עלי כותרת המופנים כלפי מעלה. <br />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: ליידי בירד ג’ונסון </div>
+                        <legend>
+                            4.
+                            מי אמר את המשפט: "היכן שצומחים פרחים צומחת תקווה"?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">רלף אמרסון  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">שייקספיר </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="correct">ליידי בירד ג’ונסון  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אמא תרזה </label>
+                        <br /><br />
+                        <div class="explenation"> קלודיה אלטה טיילור ג'ונסון הידועה כ"ליידי בירד ג'ונסון" הייתה אשתו של נשיא ארצות הברית לינדון ג'ונסון והגברת הראשונה של ארצות הברית בשנים 1963–1969</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: כל התשובות נכונות </div>
+                        <img class="triviaFlowes" src="shrunked images/trivia/אירוס-שחום_optimized.png" />
+                        <legend>
+                            5.
+                            מדוע לא מומלץ לקטוף את האירוס השחום?
+                        </legend>
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">זה לא חוקי  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB">הוא קריטי למארג האקולוגי </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC">הוא עלול למות  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD" class="correct"> כל התשובות נכונות </label>
+                            <br /><br />
+                        </div>
+                        <div class="explenation moveBlock1">השילוב בין היותו פרח מפואר, מין נדיר וצמח אנדמי – עושה את האירוס השחום למועמד חשוב להגנת הטבע. </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: זרעי פרג </div>
+                        <legend>
+                            6.
+                            איזה אוכל מופק מהצמח הזה?
+                        </legend>
+                        <img class="triviaFlowes" src="shrunked images/trivia/פרג_optimized.png" />
+                        <div class="moveAnswers">
+                            <input type="radio" name="answerA" class="answerA" value="answerA">
+                            <label for="answerA">זרעי חמנייה  </label>
+
+                            <input type="radio" name="answerB" class="answerB" value="answerB">
+                            <label for="answerB" class="correct"> זרעי פרג </label>
+                            <br />
+
+                            <input type="radio" name="answerC" class="answerC" value="answerC">
+                            <label for="answerC"> לחם כוסמין  </label>
+
+                            <input type="radio" name="answerD" class="answerD" value="answerD">
+                            <label for="answerD"> חלב סויה </label>
+                            <br /><br />
+                        </div>
+                        <div class="explenation moveBlock1">פרג האופיום, ממנו מופקים זרעי הפרג שאנחנו אוכלים בעוגות ובאוזני ההמן, וגם הסם אופיום ותרופות משככות כאבים. בארץ יש מינים אחרים של פרג שפורחים בימים אלה. </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: יש להן פקעות מתחת לאדמה </div>
+                        <legend>
+                            7.
+                            מה נכון לגבי כלניות?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">יש להן פקעות מתחת לאדמה  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הצבע שלהן תמיד אדום </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">הן פורחות ביולי-אוגוסט  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> הן חיות רק בישראל </label>
+                        <br /><br />
+                        <div class="explenation"> לכלניות יש פקעות שמכילות עמילן, ומהפקעות מתפתח כל שנה גבעול עם פרח. הצבע האדום הוא הנפוץ ביותר אך יש גם כלניות לבנות וסגולות.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: גיאופיטים </div>
+                        <legend>
+                            8.
+                            רקפת, נרקיס, חצב ואיריס הם דוגמאות לצמחים?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">הלופיטים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">הידרופיטים </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">אפיפיטים  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD" class="correct"> גיאופיטים </label>
+                        <br /><br />
+                        <div class="explenation"> גיאופיטים - פירוש המילה גאופיט הוא "צמח אדמה" (גיאה - אדמה, פיט - צמח). הגיאופיטים מתחלקים ל-3 סוגים עיקריים - צמחי בצל, צמחי פקעת וקנה שורש.</div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: על ידי חרקים (חיפושיות זבל ודבורי דבש) </div>
+                        <legend>
+                            9.
+                            האבקת הכלנית נעשית?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA">על ידי יונקים  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">בעזרת הרוח </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC" class="correct"> על ידי חרקים (חיפושיות זבל ודבורי דבש)  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD"> על ידי ציפורים </label>
+                        <br /><br />
+                        <div class="explenation">הכלניות מואבקות על ידי חרקים. המאביקים החשובים הן חיפושיות, האוכלות את האבקה ומשתמשות בפרחים כמחסה לילה ולהזדווגות. הפרחים נסגרים לעת ערב, נשארים סגורים כל הלילה ונפתחים לעת בוקר. </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="rightAns"> התשובה הנכונה היא: אזור הגליל והשפלה </div>
+                        <legend>
+                            10.
+                            באיזה אזור בארץ ניתן למצוא את הפרח הנדיר "דרדר גדול פרחים"?
+                        </legend>
+                        <input type="radio" name="answerA" class="answerA" value="answerA">
+                        <label for="answerA" class="correct">אזור הגליל והשפלה  </label>
+
+                        <input type="radio" name="answerB" class="answerB" value="answerB">
+                        <label for="answerB">אזור הגליל התחתון </label>
+                        <br />
+
+                        <input type="radio" name="answerC" class="answerC" value="answerC">
+                        <label for="answerC">אזור הנגב  </label>
+
+                        <input type="radio" name="answerD" class="answerD" value="answerD">
+                        <label for="answerD">אזור גוש דן </label>
+                        <br /><br />
+                        <div class="explenation">
+                            דרדר גדול-פרחים אשר בזמן פריחתו בסוף האביב ניתן לראות מרחבים נרחבים בצבע ורוד.
+                            הצמח מכוסה בשערות דלילות. צומח בעיקר במדרונות יבשים.
+                        </div>
+                    </fieldset>
+
+
+
+                    <div>
+                        <a href="index.html">חזרה לעמוד הבית</a>
+
+                    </div>
+
+                </section>
+            </article>
+
+        </main>
+        <footer>
+            <div>
+                <a href="contactUs.html">צור קשר</a>
+            </div>
+            <div>
+                <a href="odot.html">אודות</a>
+            </div>
+            <div>מפת האתר </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>
